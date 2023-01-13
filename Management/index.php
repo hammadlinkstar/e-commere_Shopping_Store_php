@@ -1,22 +1,4 @@
-    <!-- <?php include 'dbconnect.php';
-
-            $message = '';
-            if (isset($_POST['add-to-cart'])) {
-                $quantity = 1;
-                $select_cart = "SELECT * FROM `cart` WHERE name= $name";
-                $result = mysqli_query($conn, $sql);
-
-                $count = mysqli_num_rows($result);
-
-                if ($count > 0) {
-                    $message = "Product already added to cart";
-                } else {
-                    $sql = "INSERT INTO `cart` (`name`, `price`, `quantity`) VALUES ('$name', '$desc', '1')";
-                    $result = mysqli_query($conn, $sql);
-                    $message = "Product added to cart successful";
-                }
-            }
-            ?> -->
+    
     <?php require 'header.php'; ?>
 
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
