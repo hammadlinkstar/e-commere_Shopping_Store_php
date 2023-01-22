@@ -1,9 +1,9 @@
     <?php
 
     session_start();
-    include 'header.php';
+    include __DIR__ .'/header.php';
 
-    include "/xampp/htdocs/Management/checkOutModal.php";
+    include __DIR__ ."/checkOutModal.php";
 
     ?>
 
