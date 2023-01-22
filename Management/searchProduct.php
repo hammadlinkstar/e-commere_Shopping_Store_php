@@ -1,4 +1,4 @@
- <?php require 'header.php';
+  <?php require __DIR__ .'/header.php';
     if (isset($_GET['id'])) {
         $cat_id = $_GET['id'];
         $sql = "SELECT  p.* FROM `product` as p join categories as cat on cat.id=p.categories_id WHERE cat.status=1 and  p.status=1";
