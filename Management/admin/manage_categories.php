@@ -50,7 +50,7 @@ if (isset($_POST['submit'])) {
     }
 }
 
-require '/xampp/htdocs/Management/admin/header.php';
+require __DIR__ .'/header.php';
 
 ?>
 <div class="content-body">
