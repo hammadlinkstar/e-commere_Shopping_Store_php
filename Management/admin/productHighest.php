@@ -1,6 +1,6 @@
 <?php
-require '/xampp/htdocs/Management/admin/dbconnect.php';
-require '/xampp/htdocs/Management/admin/header.php';
+require __DIR__ .'/dbconnect.php';
+require __DIR__ .'/header.php';
 // $query = "SELECT sum(price*quantity) total, name, product_id FROM cart  group by name order by total desc limit 10";
 $query = "SELECT sum(cart.price*cart.quantity) total, product.name,cart.quantity ,product.id FROM cart join product on cart.product_id=product.id  group by cart.product_id order by total desc limit 10";
 
