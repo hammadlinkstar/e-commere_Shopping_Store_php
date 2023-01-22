@@ -1,6 +1,6 @@
 <?php
 
-require '/xampp/htdocs/Management/admin/dbconnect.php';
+require __DIR__ .'/dbconnect.php';
 
 $categories = '';
 $msg = '';
