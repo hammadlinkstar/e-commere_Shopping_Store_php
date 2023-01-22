@@ -1,4 +1,4 @@
-<?php include '/xampp/htdocs/Management/admin/loginhandler.php';
+<?php include __DIR__ .'/loginhandler.php';
 
 ?>
 <!DOCTYPE html>
