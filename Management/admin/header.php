@@ -1,6 +1,6 @@
 <?php
 
-require '/xampp/htdocs/Management/admin/dbconnect.php';
+require __DIR__ .'/dbconnect.php';
 session_start();
 if (!isset($_SESSION['ADMIN_LOGIN']) || $_SESSION['ADMIN_LOGIN'] == '') {
     header("location: /Management/admin/page-login.php");
@@ -66,7 +66,7 @@ if (!isset($_SESSION['ADMIN_LOGIN']) || $_SESSION['ADMIN_LOGIN'] == '') {
         <!--**********************************
             Header end ti-comment-alt
         ***********************************-->
-        <?php include '/xampp/htdocs/Management/admin/sidebar.php'; ?>
+        <?php include __DIR__ .'/sidebar.php'; ?>
 
 
     </div>
