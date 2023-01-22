@@ -1,6 +1,6 @@
 <?php
 session_start();
-require '/xampp/htdocs/Management/admin/dbconnect.php';
+require __DIR__ .'/dbconnect.php';
 $showError = false;
 if (isset($_POST['submit'])) {
     $username = $_POST['username'];
