@@ -1,5 +1,5 @@
 <?php
-require('dbconnect.php');
+require(__DIR__ .'/dbconnect.php');
 
 $categories = "select * from categories where status=1 order by categories asc";
 $cat_res = mysqli_query($conn, $categories);
