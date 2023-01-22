@@ -1,7 +1,7 @@
 <?php
 
-require '/xampp/htdocs/Management/admin/dbconnect.php';
-require '/xampp/htdocs/Management/admin/header.php';
+require __DIR__ .'/dbconnect.php';
+require __DIR__ .'/header.php';
 if (isset($_GET['type']) && $_GET['type'] != '') {
     $type = $_GET['type'];
     if ($type == 'delete') {
